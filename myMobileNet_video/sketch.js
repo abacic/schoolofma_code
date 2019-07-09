@@ -4,6 +4,7 @@ let myMobileNet;
 let myVideo;
 let myDiv;
 
+
 // this is calling the image classifier and giving it a name
 function preload() {
 	myMobileNet = ml5.imageClassifier('MobileNet'); //put name of model here
@@ -14,7 +15,7 @@ function preload() {
 
 function setup() {
 	 myMobileNet.classify(myVideo, gotResults);
-// this code retains it in one sentence rather than running writing  if the '...' was not there
+// this code retains it in one sentence rather than running writing vertically if the '...' was not there
 	 myDiv = createDiv('...');
 	 myDiv.parent('#wrapper');
 }
